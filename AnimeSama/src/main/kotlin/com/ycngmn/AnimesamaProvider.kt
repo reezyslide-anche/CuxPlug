@@ -10,7 +10,7 @@ import com.lagradost.cloudstream3.MainPageRequest
 import com.lagradost.cloudstream3.SearchResponse
 import com.lagradost.cloudstream3.SeasonData
 import com.lagradost.cloudstream3.SubtitleFile
-import com.lagradost.cloudstream3.TvType
+import com.lagradost.cloudstream3.siType
 import com.lagradost.cloudstream3.addEpisodes
 import com.lagradost.cloudstream3.addSeasonNames
 import com.lagradost.cloudstream3.app
@@ -234,7 +234,7 @@ class AnimesamaProvider : MainAPI() {
      * @param streamPage The AnimeSama URL to scrape from.
      * Example:
      * ```
-     * https://anime-sama.tv/catalogue/anime-name/saison0/vostfr/
+     * https://anime-sama.si/catalogue/anime-name/saison0/vostfr/
      * ```
      * @return A map containing pairs of sources and their corresponding lists of stream links,
      *         or an empty list if no match is found.
