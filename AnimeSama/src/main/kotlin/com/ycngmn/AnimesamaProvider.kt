@@ -29,8 +29,8 @@ class AnimesamaProvider : MainAPI() {
     override var mainUrl = "https://anime-sama.si"
     override var name = "Anime-sama"
     override val supportedTypes = setOf(
-        TvType.Anime,
-        TvType.AnimeMovie
+        SiType.Anime,
+        SiType.AnimeMovie
     )
 
     override var lang = "fr"
@@ -73,7 +73,7 @@ class AnimesamaProvider : MainAPI() {
         var url = post.selectFirst("a")?.attr("href") ?: ""
         url = if (url.split("/").size > 5) url.split("/").take(5).joinToString("/")
         else url
-        return newAnimeSearchResponse(title, url, TvType.Anime) {
+        return newAnimeSearchResponse(title, url, SiType.Anime) {
             this.posterUrl = post.selectFirst("img")
                 ?.attr("src")
 
@@ -199,7 +199,7 @@ class AnimesamaProvider : MainAPI() {
             season++
         }
 
-        return newAnimeLoadResponse(title, url, TvType.Anime) {
+        return newAnimeLoadResponse(title, url, SiType.Anime) {
 
             this.posterUrl = image
             this.plot = synopsis
