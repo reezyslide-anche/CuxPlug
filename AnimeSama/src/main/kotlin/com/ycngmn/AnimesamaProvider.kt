@@ -10,7 +10,7 @@ import com.lagradost.cloudstream3.MainPageRequest
 import com.lagradost.cloudstream3.SearchResponse
 import com.lagradost.cloudstream3.SeasonData
 import com.lagradost.cloudstream3.SubtitleFile
-import com.lagradost.cloudstream3.siType
+import com.lagradost.cloudstream3.SiType
 import com.lagradost.cloudstream3.addEpisodes
 import com.lagradost.cloudstream3.addSeasonNames
 import com.lagradost.cloudstream3.app
